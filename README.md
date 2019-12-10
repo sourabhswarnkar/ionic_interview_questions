@@ -98,4 +98,13 @@ Ionic 4 comes with following outstanding Features that make cross-app developmen
       -> Lazy Loading
       -> CSS Variables
       -> Ionic Native 5
-# 12. 
+# 12. What are the benefits of caching views in Ionic applications?
+
+In Ionic, caching of up to ten views is done by default. This improves performance and assists in maintaining different states simultaneously in the views. For instance, cache maintains scroll position in the views or the active state of buttons.
+
+# 13. What is Ionic Native?
+
+It is a Typescript wrapper for PhoneGap/Cordova plugins. Its purpose is to ease the process of adding native functionalities to your Ionic app.
+
+
+
