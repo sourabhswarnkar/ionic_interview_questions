@@ -47,5 +47,9 @@ An app that is built with JIT is slow as compared to AOT. But compilation time r
 # 4. What is difference between Phonegap , Cordova and Ionic ?
 
       # PhoneGap: PhoneGap is a framework developed by Adobe Systems. It is used for developing mobile applications and can be used by anyone with the knowledge of CSS, HTML, JScript. PhoneGap is a propitiatory version of Apache Cordova and gives extra features apart from the existing Cordova.
+      
+      
       # Cordova: Cordova is a JavaScript framework which builds apps, which can access the device hardware. Cordova cannot build UI interactions of mobile apps because it uses HTML5, CSS6, Sencha to build UI. However, it supports other web technologies used to develop mobile apps. Cordova is also known as Apache Cordova.
+      
+      
       # Ionic: Ionic framework is a set of CSS, JVscript library, built on Cordova and AngularJS
