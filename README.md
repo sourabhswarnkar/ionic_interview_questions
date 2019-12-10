@@ -107,4 +107,13 @@ In Ionic, caching of up to ten views is done by default. This improves performan
 It is a Typescript wrapper for PhoneGap/Cordova plugins. Its purpose is to ease the process of adding native functionalities to your Ionic app.
 
 
+# 14. Difference between Ionic 4 and Ionic 3
+
+ # Changes in Package Name
+In Ionic 4, the package name starts with @ symbol like @ionic/angular. Whereas, the Ionic 3 package name does not use the @ symbol. We can understand the syntax comparison of Ionic 3 and ionic 4 from the below syntax.
+
+In Ionic 3: npm install ionic-angular  
+In Ionic 4: npm install @ionic/angular  
+
+If you are going to migrating an app from Ionic 3 to Ionic 4, you need to update the imports from ionic-angular to @ionic/angular.
 
