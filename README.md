@@ -30,9 +30,9 @@ An app that is built with JIT is slow as compared to AOT. But compilation time r
    
     1. Enable developer mode on Android Mobile.
     
-    2. Run the app on the real device either by running ionic Cordova run android or build the apk by running ionic Cordova build        android and transfer it to the phone.
+    2. Run the app on the real device either by running ionic Cordova run android or build the apk by running ionic Cordova build android and transfer it to the phone.
     
-    3. Connect device to your computer with a USB cable and lunch Google Chrome browser and open URL chrome://inspect/#devices which    will display your phone and app name. Click on inspect there.
+    3. Connect device to your computer with a USB cable and lunch Google Chrome browser and open URL chrome://inspect/#devices which will display your phone and app name. Click on inspect there.
     
     4. Now you will be able to inspect the app and check the logs.
     
