@@ -53,3 +53,16 @@ An app that is built with JIT is slow as compared to AOT. But compilation time r
       
       
       # Ionic: Ionic framework is a set of CSS, JVscript library, built on Cordova and AngularJS
+ 
+ # 5. How can you render a 5000 item list in Ionic, without affecting scroll performance?
+ 
+ Ionic provides a collection-repeat directive that renders only visible items in the DOM. So even if the list is huge, like 5000 in our example, only items visible in a viewport are rendered. Thus, scroll performance is not affected.
+
+# 6. What’s the difference between “ionic build” and “ionic prepare”?
+
+ionic prepare <platform> copies all files from the www folder into the target platform’s www folder.
+
+ionic build <platform> also does this, but also builds the app’s source code so that it can be run on a simulator/emulator or a device.
+      
+# 7. how do you deploy an Ionic project onto a device?
+To deploy your app in device, all you have to do is enable USB Debugging and Developer Mode on your Android device, then run ionic cordova run android --device from the command line.
