@@ -117,3 +117,90 @@ In Ionic 4: npm install @ionic/angular
 
 If you are going to migrating an app from Ionic 3 to Ionic 4, you need to update the imports from ionic-angular to @ionic/angular.
 
+# 15. The List of Useful Ionic Framework Commands?
+The commands and its description
+1.          start- This command is used to create a new project
+2.          generate-  This command is used to generate pipes, components, pages, directives, providers and tabs
+3.          serve- This command is used to start a local dev server for app dev/testing
+4.          build - This command is used to Build web assets and prepare your app for any platform targets
+5.          docs - This command is used to Open the Ionic documentation website
+6.          info - This command is used to Print system/environment info
+7.          link- This command is used to Connect your local app to Ionic
+8.          login- This command is used to Login with your Ionic ID
+9.          signup - This command is used to Create an Ionic account
+10.     telemetry-  This command is used to Opt in and out of telemetry
+11.     upload- This command is used to Upload a new snapshot of your app
+12.     config get- This command is used to Print config values
+13.     config set- This command is used to Set config values
+14.     cordova build- This command is used to Build an Ionic project for a given platform
+15.     cordova compile- This command is used to compile native platform code
+16.     cordova emulate- This command is used to Emulate an Ionic project on a simulator or emulator
+17.     cordova platform- This command is used to Manage Cordova platform targets
+18.     cordova plugin - This command is used to Manage Cordova plug-in
+19.     cordova prepare - This command is used to Copies assets to Cordova platforms, preparing them for native builds
+20.     cordova resources - This command is used to Automatically create icon and splash screen resources
+21.     package build- This command is used to Start a package build
+22.     package download- This command is used to Download your packaged app
+23.     package list - This command is used to List your cloud builds
+24.     package info - This command is used to Get info about a build
+25.     cordova run - This command is used to Run an Ionic project on a connected device
+
+
+# 16. What Are the Others Ionic Commands also Available for Angular?
+
+Ionic Commands also Available for Angular Projects -
+1.          Pipes,
+2.          Components,
+3.          Directives,
+4.          Providers and
+5.          Tabs
+6.          And So On
+Syntax –
+1.          ionic generate [<pipes>] [<pipes-name>]
+2.          ionic generate [<components>] [<components-name>]
+3.          ionic generate [<directives>] [<directives-name>]
+4.          ionic generate [<providers>] [<providers-name>]
+5.          ionic generate [<tabs>] [<tabs-name>]
+      
+      
+# 17. How to parse JSON in Ionic Framework?
+
+he JSON.parse() method parses a JSON string, constructing the JavaScript value or object described by the string.
+The Example is -
+var users = JSON.parse(userResponseData);
+
+# 18. How To Disable / Enable Content Scrolling in IONIC Framework?
+We can disable/enable scrollbar pragmatically.
+
+Example 1 -  Try a setting <content scroll="false"> that will disable scrolling.
+
+Example 2 , You can alos used this as a quick fix –
+
+This every time an event is called, in our case, on every drag event.
+
+Example 1, 
+Disable Scrolling -
+$ionicScrollDelegate.getScrollView().__enableScrollY = false
+
+Example 2, 
+Enable Scrolling -
+$ionicScrollDelegate.getScrollView().__enableScrollY = true
+
+
+Example 3,
+$timeout(function(){
+   $ionicScrollDelegate.$getByHandle('formularContent').freezeScroll(true);
+})
+
+Example 4,
+Add the .scss file –
+.no-scroll .scroll-content{
+    overflow: hidden;
+}
+
+And
+Then add the no-scroll class to your ion-content like this –
+<ion-content class="no-scroll">
+..
+
+</ion-content>
