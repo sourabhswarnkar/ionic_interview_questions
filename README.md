@@ -172,17 +172,18 @@ var users = JSON.parse(userResponseData);
 # 18. How To Disable / Enable Content Scrolling in IONIC Framework?
 We can disable/enable scrollbar pragmatically.
 
-Example 1 -  Try a setting <content scroll="false"> that will disable scrolling.
+Example 1 -  
+Try a setting <content scroll="false"> that will disable scrolling.
 
-Example 2 , You can alos used this as a quick fix –
+Example 2-
+You can also use this as a quick fix –
 
 This every time an event is called, in our case, on every drag event.
-
-Example 1, 
+ 
 Disable Scrolling -
 $ionicScrollDelegate.getScrollView().__enableScrollY = false
 
-Example 2, 
+
 Enable Scrolling -
 $ionicScrollDelegate.getScrollView().__enableScrollY = true
 
@@ -201,6 +202,4 @@ Add the .scss file –
 And
 Then add the no-scroll class to your ion-content like this –
 <ion-content class="no-scroll">
-..
-
 </ion-content>
