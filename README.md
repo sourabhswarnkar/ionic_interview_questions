@@ -212,4 +212,59 @@ Then add the no-scroll class to your ion-content like this –
 
 It Scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies
 
-# 20. 
+# 20. How to add Google charts in ionic 4?
+
+We start by installing the library:
+
+npm i -S ng2-google-charts 
+And adding it to our the home.module.ts file:
+
+import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    RouterModule.forChild([
+      {
+        path: '',
+        component: HomePage
+      }
+    ]),
+   **Ng2GoogleChartsModule**
+  ],
+  declarations: [HomePage]
+})
+
+We can now use the <google-chart> directive in the home.page.html:
+
+<ion-content padding>
+  <google-chart [data]="pieChartData"></google-chart>
+</ion-content>
+
+We will use a pieChartData property initialized in the home.page.ts:
+
+  pieChartData;
+
+  ngOnInit() {
+    this.useAngularLibrary();
+  }
+The last part is creating the chart data and configuration in a method named useAngularLibrary:
+
+  useAngularLibrary() {
+    this.pieChartData = {
+      chartType: 'PieChart',
+      dataTable: [
+        ['Languages', 'Percent'],
+        ['Ionic',     33],
+        ['Angular',      33],
+        ['JavaScript',  33]
+      ],
+      options: {
+      'title': 'Technologies',
+      'width': 400,
+      'height': 300
+      }
+    };
+  }
