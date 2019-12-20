@@ -203,3 +203,9 @@ And
 Then add the no-scroll class to your ion-content like this –
 <ion-content class="no-scroll">
 </ion-content>
+
+# 19. Why we use 'npm audit fix'
+
+It Scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies
+
+# 20. 
