@@ -222,19 +222,33 @@ And adding it to our the home.module.ts file:
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 
 @NgModule({
+
   imports: [
+  
     CommonModule,
+    
     FormsModule,
+    
     IonicModule,
+    
     RouterModule.forChild([
+    
       {
+      
         path: '',
+        
         component: HomePage
+        
       }
+      
     ]),
+    
    **Ng2GoogleChartsModule**
+   
   ],
+  
   declarations: [HomePage]
+  
 })
 
 We can now use the <google-chart> directive in the home.page.html:
