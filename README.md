@@ -262,23 +262,25 @@ We will use a pieChartData property initialized in the home.page.ts:
   pieChartData;
 
   ngOnInit() {
+  
     this.useAngularLibrary();
+    
   }
 The last part is creating the chart data and configuration in a method named useAngularLibrary:
 
-  useAngularLibrary() {
-    this.pieChartData = {
-      chartType: 'PieChart',
-      dataTable: [
-        ['Languages', 'Percent'],
-        ['Ionic',     33],
-        ['Angular',      33],
-        ['JavaScript',  33]
-      ],
-      options: {
-      'title': 'Technologies',
-      'width': 400,
-      'height': 300
-      }
-    };
-  }
+        useAngularLibrary() {
+          this.pieChartData = {
+            chartType: 'PieChart',
+            dataTable: [
+              ['Languages', 'Percent'],
+              ['Ionic',     33],
+              ['Angular',      33],
+              ['JavaScript',  33]
+            ],
+            options: {
+            'title': 'Technologies',
+            'width': 400,
+            'height': 300
+            }
+          };
+        }
