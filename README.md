@@ -8,9 +8,12 @@ Interview Questions for ionic (1, 2 ,3 and 4)
 
     NodeJS , npm are required in order to install Ionic. You need NodeJS 6.0.0+ or a higher version in order to install ionic. 
     
+   **[⬆ Back to Top](#table-of-contents)**
+    
 # 2. Who Developed Ionic Framework ?
 
 Ionic Framework was created by Drifty Co. in 2013 and developed by Max Lynch, Ben Sperry, and Adam Bradley.
+  **[⬆ Back to Top](#table-of-contents)**
 
 # 3. What is AOT and JIT. Which is used by ionic ?
 
@@ -25,6 +28,7 @@ If we just use ionic cordova build platform (android or ios) then it will be JIT
 
 An app that is built with JIT is slow as compared to AOT. But compilation time required for AOT is more than JIT. So for a quick checks use JIT and for a final deployment use AOT.
 
+  **[⬆ Back to Top](#table-of-contents)**
 # 4. How to debug ionic app in real device( Android and iOS )
 
 
