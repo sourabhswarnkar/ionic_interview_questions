@@ -267,3 +267,26 @@ The last part is creating the chart data and configuration in a method named use
             }
           };
         }
+
+# 21.The size of your Ionic application's generated APK is huge. What can you do to reduce the size?
+
+The size of the Ionic app can be reduced in the following ways:
+
+ **->** First, compress all the screenshots and icons and deletes all unwanted icons. If you use portrait mode, keep only portrait screenshots, and if you are using landscape mode, keep all the screenshots landscape.
+ **->** Second, minify all JS and CSS files and update the index.html file accordingly.
+ **->** Third, remove unwanted external modules and Cordova plugins that are not being used. You can also remove unnecessary code from the app, which adds a lot of extra bytes to the app's size.
+ **->** Last, you can also run the following command to reduce the app size: **ionic build android -prod**.
+ 
+ # 22. How to rename an Ionic app?
+ 
+ To rename the Ionic app, open the **config.xml** file from your project's root directory and update the value inside the name tag.
+ 
+ # 23. How to update Cordova plugins?
+ 
+ We can update the Cordova plugins by using the following command.
+ 
+ **npm install -g cordova-check-plugins**  
+ **cordova-check-plugins --update=auto**  
+ 
+ # 24. 
+ 
